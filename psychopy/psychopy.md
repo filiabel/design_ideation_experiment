@@ -1,1 +1,0 @@
-# Psychopy files
