@@ -11,7 +11,7 @@ The entire experimental setup is made using open-source software - mainly [Psych
 * The experiment itself and other related files related to PsychoPy are stored in [this folder](psyhopy/psychopy.md). 
     * Previous versions of the PsychoPy experiment is also included. One which annotates the experiment timeline using LabStreamingLayer (LSL). Some components may differ from the final experiment.
     * Contains snippets of useful scripts/code used in PsychoPy's code components throughout the experiment. E.g. communication with Pupil Capture software and sound capture.
-    * * PsychoPy version 2021.1.4 (Standalone) is used building and running the experiment. All Python libraries should be installed by default with the Standalone PsychoPy software.
+    * PsychoPy version 2021.1.4 (Standalone) is used building and running the experiment. All Python libraries should be installed by default with the Standalone PsychoPy software.
 * Code used for data preprocessing and analysis can be found in [this folder](data_analysis/data_analysis.md). 
     * Contains `environment.yml` for Anaconda to install all requirements to run code.
     * Helper function for writing LSL streams saved in .xdf format to .csv. 
