@@ -1,7 +1,7 @@
 # Design Ideation Experiment
 This repository contains the work related to my Master Thesis at [TrollLABS](https://www.ntnu.edu/mtp/trolllabs), spring 2021.
 
-Eye-tracking research based on stimuli on screen. Participants receive open ended design problems and a set of words ment to serve as inspirational stimuli. Their job is to generate as many ideas for each design problem.
+Eye-tracking research based on stimuli on screen. Participants receive open ended design problems and a set of words ment to serve as inspirational stimuli. Their job is to generate as many ideas as possible for each design problem. During the ideation, the participants are to sepak out loud.
 
 The entire experimental setup is made using open-source software - mainly [PsychoPy](https://psychopy.org/) and [Pupil Core](https://pupil-labs.com/products/core/). Experimental setup is based on the following research paper:
 > Goucher-Lambert, K., Moss, J., & Cagan, J. (2019). A neuroimaging investigation of design ideation with and without inspirational stimuli — Understanding the meaning of near and far stimuli. Design Studies, 60, 1–38. https://doi.org/10.1016/j.destud.2018.07.001
@@ -12,7 +12,7 @@ The entire experimental setup is made using open-source software - mainly [Psych
     * Previous versions of the PsychoPy experiment is also included. One which annotates the experiment timeline using LabStreamingLayer (LSL). Some components may differ from the final experiment.
     * Contains snippets of useful scripts/code used in PsychoPy's code components throughout the experiment. E.g. communication with Pupil Capture software and sound capture.
     * PsychoPy version 2021.1.4 (Standalone) is used building and running the experiment. All Python libraries should be installed by default with the Standalone PsychoPy software.
-* Code used for data preprocessing and analysis can be found in [this folder](data_analysis/data_analysis.md). 
+* Code used for data preprocessing and analysis can be found in [this folder](data_analysis/data_analysis.md). This folder also contains parts of the preprocessed datasets.
     * Contains `environment.yml` for Anaconda to install all requirements to run code.
     * Helper function for writing LSL streams saved in .xdf format to .csv. 
 
