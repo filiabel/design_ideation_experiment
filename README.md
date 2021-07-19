@@ -3,7 +3,7 @@ This repository contains the work related to my Master Thesis at [TrollLABS](htt
 
 Design ideation study using eye tracking technology (N = 24). Participants receive open ended design problems and a set of words on the monitor,  and the words are ment to serve as inspirational stimuli for solving the design problems at hand. Their job is to generate as many ideas as possible for each design problem. During the ideation, the participants are to speak out loud and gets recorded.
 
-The entire experimental setup is made using open-source software, mainly [PsychoPy](https://psychopy.org/) and [Pupil Core](https://pupil-labs.com/products/core/), and is therefore reproducible by anyone. Experimental setup is based on the following research paper:
+The entire experimental setup is made using open-source software, mainly [PsychoPy](https://psychopy.org/) and [Pupil Core](https://pupil-labs.com/products/core/), and is therefore _**reproducible by anyone**_. Experimental setup is based on the following research paper:
 > Goucher-Lambert, K., Moss, J., & Cagan, J. (2019). A neuroimaging investigation of design ideation with and without inspirational stimuli — Understanding the meaning of near and far stimuli. Design Studies, 60, 1–38. https://doi.org/10.1016/j.destud.2018.07.001
 
 
