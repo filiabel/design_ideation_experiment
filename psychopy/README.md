@@ -18,7 +18,7 @@ By downloading this folder one should be able to run the experiment by opening `
 ## LabStreamingLayer (LSL)
 > "LSL is an overlay network for real-time exchange of time series between applications, most often used in research environments. LSL has clients for many other languages and platforms that are compatible with each other."
 
-LSL offers great functionality for syncing hardware and software when conducting research experiments. Standalone PsychoPy has the Python interface [pylsl](https://github.com/labstreaminglayer/liblsl-Python) installed by default. `LSL_code.py` showcases an example on how to implement LSL into PsychoPy for annotations. 
+LSL offers great functionality for syncing hardware and software when conducting research experiments. Standalone PsychoPy has the Python interface [pylsl](https://github.com/labstreaminglayer/liblsl-Python) installed by default. `LSL_code.py` showcases an example on how to implement LSL into PsychoPy for annotations. LSL was not used in this experiment, as Pupil Network API offered similar functionality for this use case.
 
 LSL interfaces:
 * [LabRecorder](https://github.com/labstreaminglayer/App-LabRecorder) - client to choose streams from the network and save to .xdf file.
