@@ -18,9 +18,46 @@ By downloading this folder one should be able to run the experiment by opening `
 ## LabStreamingLayer (LSL)
 > "LSL is an overlay network for real-time exchange of time series between applications, most often used in research environments. LSL has clients for many other languages and platforms that are compatible with each other."
 
-LSL offers great functionality for syncing hardware and software when conducting research experiments. Standalone PsychoPy has the Python interface [pylsl](https://github.com/labstreaminglayer/liblsl-Python) installed by default. `LSL_code.py` showcases an example on how to implement LSL into PsychoPy for annotations. LSL was not used in this experiment, as Pupil Network API offered similar functionality for this use case.
+LSL offers great functionality for syncing hardware and software when conducting research experiments. Standalone PsychoPy has the Python interface [pylsl](https://github.com/labstreaminglayer/liblsl-Python) installed by default. LSL was not used in this experiment, as Pupil Network API offered similar functionality for this use case, but will be useful if more hardware is to be included.
 
 LSL interfaces:
 * [LabRecorder](https://github.com/labstreaminglayer/App-LabRecorder) - client to choose streams from the network and save to .xdf file.
 * [Pupil Capture LSL Relay](https://github.com/labstreaminglayer/App-PupilLabs/blob/master/pupil_capture/README.md) - plugin to send data from Pupil to the LSL stream.
 * [Collection of apps and tools for LabStreamingLayer](https://github.com/labstreaminglayer/)
+
+The code below showcases an example on how to implement LSL into PsychoPy for annotations. More general examples of pylsl can be found here [here](https://github.com/chkothe/pylsl/tree/master/examples).
+```python
+### In a code component 'init' routine or similar.
+
+## Before experiment 
+# Import modules from pylsl
+from pylsl import StreamInfo, StreamOutlet
+
+## Begin experiment 
+# Choose the amounts of channels (columns/data points) you want in your LSL stream from Psychopy. Add as many as you need!
+channel_names = ['participant_id','problem_id', 'routine', 'stimuli', 'idea_timestamp'] # ..... etc.
+
+# Creating the LSL stream for PsychoPy
+info = StreamInfo(name='psychopy', type='Markers', channel_count=len(channel_names),
+                   channel_format='string', source_id='uniqueid12345') 
+
+# Setting channel_format='string' will set all your columns to strings, but at the same time allow for sending all kinds of data.
+# Casting to the correct data type can be done when post processing the generated output file in xdf format.
+
+# Add metadata for channels
+chns = info.desc().append_child("channels")
+for label,ch_type in zip(channel_names, channel_type):
+    ch = chns.append_child("channel")
+    ch.append_child_value("label", label)
+
+# Initialize the stream so that LabRecorder (or other software) can pick it up.
+outlet = StreamOutlet(info)
+
+### Add this in code components whenever you need to send an annotation/marker.
+
+# Make sure the lists passed into outlet.push_sample() has a value for each channel. You can pass empty string values
+# Remember that our stream only accepts strings, as this is set as our format. Convert your data: str(4) etc.
+# channel_names =  ['participant_id','problem_id', 'routine',        'stimuli', 'idea_timestamp'] # ..... etc.
+outlet.push_sample([ participant_id,   str(4),     'idea_generated', '',        ''              ])
+
+```
