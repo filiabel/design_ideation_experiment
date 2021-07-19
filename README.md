@@ -11,7 +11,7 @@ The entire experimental setup is made using open-source software, mainly [Psycho
 * The experiment itself and other related files related to running the PsychoPy experiment are stored in [this folder](psychopy/README.md). 
   * Contains a folder with snippets of useful scripts/code used in PsychoPy's code components throughout the experiment. E.g. communication with Pupil Capture software and sound capture.
   * PsychoPy version 2021.1.4 (Standalone) was used to build and run the experiment. All necessary Python libraries should be installed by default with the Standalone PsychoPy software (e.g. `zmq` for Pupil Network API and `sounddevice` for audio recording).
-  * Previous versions of the PsychoPy experiment is also included. One which annotates the experiment timeline using LabStreamingLayer (LSL). Some components may differ from the final experiment. This can be useful if one are to recreate the experiment with additional biosensors (e.g. EEG, fMRI) in tandem with eye tracking. Pupil Core also supports LSL. 
+  * Code to show how to use LabStreamingLayer (LSL) in the PsychoPy experiment is also included. This can be useful to implement if one are to recreate the experiment with additional biosensors (e.g. EEG, fMRI) in tandem with eye tracking. Pupil Core also supports LSL. 
 * `environment.yml` contains all requirements to do data processing and analysis. It can be installed using `conda env create -f environment.yml` in Anaconda prompt.
 * Code used for data analysis can be found in [this folder](data_analysis/README.md).
   * Helper function for writing LSL streams saved in .xdf format to .csv. This was not used in the experiment, as communcation was done with Pupil Network API.
