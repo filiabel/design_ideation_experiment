@@ -16,7 +16,7 @@ This folder contains the experiment itself and other related files related to ru
   * Code to show how to use LabStreamingLayer (LSL) in the PsychoPy experiment is also included. This can be useful to implement if one are to recreate the experiment with additional biosensors (e.g. EEG, fMRI) in tandem with eye tracking. Pupil Core also supports LSL. 
 
 ### [Data Analysis](data_analysis/README.md)
-This folder contains data for all eye tracking analysis, experiment statistics and plotting in Jupyter notebooks
+This folder contains data for all eye tracking analysis, experiment statistics and plotting in Jupyter notebooks and normal Python scripts.
 
 ### [Data Processing](data_processing/README.md)
 This folder contains code used for concatenating all raw data files to managable data and code for transcription of audio recordings.
