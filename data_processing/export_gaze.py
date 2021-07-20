@@ -50,10 +50,11 @@ subset_mask = [df_total[(df_total.participant_id == t[0]) & (df_total.gaze_times
 # Concatenate subset based on mask
 data = pd.concat(subset_mask, ignore_index=True)
 
-# Save subset to h5
-data.to_hdf('../Processed data/annotated_gaze.h5', 'df', format='t', complevel=5, complib='zlib')
+# Save subset to h5 and csv
+# data.to_hdf('../Processed data/annotated_gaze.h5', 'df', format='t', complevel=5, complib='zlib')
+data.to_csv('../Processed data/annotated_gaze.csv',index=False)
 
 # %%
-# Save to h5 with key = 'df'. Good compression
-df_total.to_hdf('../Processed data/all_gaze.h5', 'df', format='t', complevel=5, complib='zlib')
-
+# Save all data to h5 and csv
+# df_total.to_hdf('../Processed data/all_gaze.h5', 'df', format='t', complevel=5, complib='zlib')
+df_total.to_csv('../Processed data/all_gaze.csv',index=False)

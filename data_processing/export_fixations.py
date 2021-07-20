@@ -49,9 +49,13 @@ subset_mask = [df_total[(df_total.participant_id == t[0]) & (df_total.start_time
 # Concatenate subset based on mask
 data = pd.concat(subset_mask, ignore_index=True)
 
-# Save subset to h5
+# Save subset to h5 and csv
 data.to_hdf('../Processed data/annotated_fixations.h5', 'df', format='t', complevel=5, complib='zlib')
+# data.to_csv('../Processed data/annotated_fixations.csv', index=False)
 
 #%%
-# Save to h5 with key = 'df'. Good compression
+# Save all data to h5 and csv
 df_total.to_hdf('../Processed data/all_fixations.h5', 'df', format='t', complevel=5, complib='zlib')
+# df_total.to_csv('../Processed data/all_fixations.csv', index=False)
+
+# %%
