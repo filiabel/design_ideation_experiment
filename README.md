@@ -7,7 +7,7 @@ The entire experimental setup is made using open-source software, mainly [Psycho
 > Goucher-Lambert, K., Moss, J., & Cagan, J. (2019). A neuroimaging investigation of design ideation with and without inspirational stimuli — Understanding the meaning of near and far stimuli. Design Studies, 60, 1–38. https://doi.org/10.1016/j.destud.2018.07.001
 
 ## Dataset
-* Processed data wil be made publicly available here: https://doi.org/10.18710/0UZQWD
+* Processed data wil be made publicly available here: https://doi.org/10.18710/PZQC4A
 * Raw export data for each participant and raw data from Pupil Capture will be publicly available here: ___
 
 
