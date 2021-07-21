@@ -5,6 +5,11 @@ Notebooks are presented as is, but can showcase how to analyze the data. Using P
 
 Screenshot of each unique wordset routine is included in folder `images`. This can be useful for plotting heatmaps, scanpath or other visualizations above the stimuli for context. 
 
+## Transcription analysis
+Using Python library `SpaCy`, all transcriptions were run through their text processing pipeline. Extracting the lemma (root word) of each word, one could find the most frequen words across all problem/wordset/stimuli combinations. 
+
+After this, the intersection of words across all stimuli within a problem/wordset was calculated to see which words (and thus partly ideas) were prevalent indepent of stimuli.
+
 ## Visualization examples
 ### Heatmaps
 _Aggregated heatmaps across stimuli and wordset for all participants._
