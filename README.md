@@ -7,10 +7,16 @@ The entire experimental setup is made using open-source software, mainly [Psycho
 > Goucher-Lambert, K., Moss, J., & Cagan, J. (2019). A neuroimaging investigation of design ideation with and without inspirational stimuli — Understanding the meaning of near and far stimuli. Design Studies, 60, 1–38. https://doi.org/10.1016/j.destud.2018.07.001
 
 ## Dataset
-* Processed data wil be made publicly available here: https://doi.org/10.18710/PZQC4A
-* Raw export data for each participant and raw data from Pupil Capture will be publicly available here: ___
+All data produced by this experiment (besides raw audio data, due to privacy reasons) is made publicly available. 
+As accuracy might be varying betweeen participants, make sure to get to know the data before using it for further research. For example is the calibrarion of participant 002 quite off, but for my use case it was still usable.
 
+### Processed data
+Processed data is publicly available here: 
+> Abelson, Filip Gornitzka; Dybvik, Henrikke; Steinert, Martin (2021) "Dataset for Design Ideation Study", https://doi.org/10.18710/PZQC4A, DataverseNO, V1
 
+Raw data from Pupil Capture and raw data exports from Pupil Player is also available. Data is saved as one large zip folder (~15 GB) per participant.
+> Abelson, Filip Gornitzka; Dybvik, Henrikke; Steinert, Martin (2021). "Raw Data for Design Ideation Study", https://hdl.handle.net/11250/2765034
+> 
 ## Repository Structure
 ### [Psychopy](psychopy/README.md) 
 This folder contains the experiment itself and other related files related to running the PsychoPy experiment.
