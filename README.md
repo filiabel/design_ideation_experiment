@@ -1,3 +1,4 @@
+[![DOI](https://zenodo.org/badge/375697938.svg)](https://zenodo.org/badge/latestdoi/375697938)
 # Design Ideation Experiment
 This repository contains the work related to my Master Thesis at [TrollLABS](https://www.ntnu.edu/mtp/trolllabs), spring 2021.
 
