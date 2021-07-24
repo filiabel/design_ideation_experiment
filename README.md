@@ -15,6 +15,7 @@ As accuracy might be varying betweeen participants, make sure to get to know the
 Processed data is publicly available here: 
 > Abelson, Filip Gornitzka; Dybvik, Henrikke; Steinert, Martin (2021) "Dataset for Design Ideation Study", https://doi.org/10.18710/PZQC4A, DataverseNO, V1
 
+### Raw data
 Raw data from Pupil Capture and raw data exports from Pupil Player is also available. Data is saved as one large zip folder (~15 GB) per participant.
 > Abelson, Filip Gornitzka; Dybvik, Henrikke; Steinert, Martin (2021). "Raw Data for Design Ideation Study", https://hdl.handle.net/11250/2765034
 > 
