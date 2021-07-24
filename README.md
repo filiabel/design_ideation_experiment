@@ -1,4 +1,4 @@
-[![DOI](https://zenodo.org/badge/375697938.svg)](https://zenodo.org/badge/latestdoi/375697938)
+[![DOI](https://zenodo.org/badge/375697938.svg)](https://zenodo.org/badge/latestdoi/375697938) [![Processed data](<https://img.shields.io/badge/DOI-10.18710/PZQC4A-orange>)](https://dataverse.no/dataset.xhtml?persistentId=doi:10.18710/PZQC4A) [![Raw data](https://img.shields.io/badge/hdl-11250%2F2765034-brightgreen)](https://hdl.handle.net/11250/2765034)
 # Design Ideation Experiment
 This repository contains the work related to my Master Thesis at [TrollLABS](https://www.ntnu.edu/mtp/trolllabs), spring 2021.
 
