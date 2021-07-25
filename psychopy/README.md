@@ -188,7 +188,7 @@ info = StreamInfo(name='psychopy', type='Markers', channel_count=len(channel_nam
 
 # Add metadata for channels
 chns = info.desc().append_child("channels")
-for label,ch_type in zip(channel_names, channel_type):
+for label in channel_names:
     ch = chns.append_child("channel")
     ch.append_child_value("label", label)
 
