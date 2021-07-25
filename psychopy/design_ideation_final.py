@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2021.1.4),
-    on juli 19, 2021, at 19:38
+    on juli 26, 2021, at 01:11
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -630,7 +630,8 @@ time_fn = globalClock.getTime
 pupil_remote.send_string("T {}".format(time_fn()))
 print(pupil_remote.recv_string())
 
-sleep(1) '''This was added post-experiment. 
+sleep(1) 
+'''This was added post-experiment. 
 No sleep before record is believed to cause issues with certain plugins in Pupil Player 
 due to some data is timestamped with a value much larger than the new zeroed timestamp.
 
